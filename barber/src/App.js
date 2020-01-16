@@ -19,6 +19,8 @@ import AddProduct from './Addproduct';
    render(){
  
     var prePath = "/Barber-react";
+      // var prePath = "";
+
   return (
     <Router>
      
@@ -40,13 +42,13 @@ import AddProduct from './Addproduct';
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Branches"}> Branches</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Reservision"> Reservision</Link></a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Reservision"}> Reservision</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/"> Home</Link></a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/"}> Home</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/products">products</Link> </a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/products"}>products</Link> </a>
             </li>
           </ul>
         </div>

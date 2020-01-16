@@ -94,11 +94,12 @@ class Products extends Component {
         
         
         
-        for(var i =1 ; i<8 ; i++){
+        for(var i =1 ; i<10 ; i++){
 
          
         axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/products/${i}`)
             .then(data =>{
+                console.log(data)
              var div =  document.createElement("Div")
              var photo =  document.createElement("img")
              var name = document.createElement("p")
@@ -110,8 +111,8 @@ class Products extends Component {
              photo.setAttribute("width", "290px");
              photo.setAttribute("height", "228");
              photo.classList.add("img-fluid");
-             div.setAttribute("width", "300px");
-             div.setAttribute("height", "300px");
+             div.setAttribute("width", "500px");
+             div.setAttribute("height", "500px");
              div.setAttribute("style","border:1px; border-style:solid; border-color:#FFf000;padding:10px")
              name.innerHTML = data.data.data.name
              price.innerHTML =data.data.data.price

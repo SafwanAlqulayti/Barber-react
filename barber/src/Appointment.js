@@ -4,8 +4,8 @@ import axios from 'axios';
 class Appointment extends Component {
 
     componentDidMount(){
-        for(var i=0 ; i<7 ; i++){
-     axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/reservations/1`).then(data=>{
+        for(var i=0 ; i<10 ; i++){
+     axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/reservations/${i}`).then(data=>{
          console.log(data)
          
             var div =  document.createElement("div")

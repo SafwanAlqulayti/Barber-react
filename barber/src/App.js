@@ -21,7 +21,7 @@ import AddProduct from './Addproduct';
   return (
     <Router>
      
-    <div className="App">
+    <div className="App" id="nav1">
      <nav>
      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">
@@ -58,7 +58,7 @@ import AddProduct from './Addproduct';
       <Route  path="/Branches" component={Branches} />
      <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
      <Route path="/Appointment" component={Appointment} > <Appointment></Appointment> </Route>
-      <AddProduct></AddProduct>
+       
       </div>
       
       

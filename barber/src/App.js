@@ -18,6 +18,7 @@ import AddProduct from './Addproduct';
 
    render(){
  
+    var prePath = "/Barber-react";
   return (
     <Router>
      
@@ -33,10 +34,10 @@ import AddProduct from './Addproduct';
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav text-uppercase ml-auto">
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Appointment"> Appointment</Link></a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Appointment"}> Appointment</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Branches"> Branches</Link></a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Branches"}> Branches</Link></a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Reservision"> Reservision</Link></a>

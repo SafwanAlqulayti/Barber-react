@@ -71,11 +71,11 @@ This website was created as a part of the learning process at SEI course. The we
 
 # Achived Requirements
 - Build a web application using create-react-app.
-- 7 components ( Home , About , Branch ,Product , Services , Process , Appointment)
+- 11 components ( Home , About , Nav , Branch ,Product , Services , Process , Appointment, CutHair, Reservation , AddProduct)
 - Props
 - State properties
 - SetState
-- Two routes (Product , Branch)
+- Routes (Product , Branch , Appointmet , Reservision, Home )
 - Used Rails to build API 
 
 

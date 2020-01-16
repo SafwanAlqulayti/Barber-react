@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Barber-react/static/css/main.a10a3fda.chunk.css",
+    "main.js": "/Barber-react/static/js/main.081551a0.chunk.js",
+    "main.js.map": "/Barber-react/static/js/main.081551a0.chunk.js.map",
+    "runtime-main.js": "/Barber-react/static/js/runtime-main.f3e97b96.js",
+    "runtime-main.js.map": "/Barber-react/static/js/runtime-main.f3e97b96.js.map",
+    "static/js/2.6ae16e8f.chunk.js": "/Barber-react/static/js/2.6ae16e8f.chunk.js",
+    "static/js/2.6ae16e8f.chunk.js.map": "/Barber-react/static/js/2.6ae16e8f.chunk.js.map",
+    "index.html": "/Barber-react/index.html",
+    "precache-manifest.d4f3bb41760cc5985bb4c1a27fd94d39.js": "/Barber-react/precache-manifest.d4f3bb41760cc5985bb4c1a27fd94d39.js",
+    "service-worker.js": "/Barber-react/service-worker.js",
+    "static/css/main.a10a3fda.chunk.css.map": "/Barber-react/static/css/main.a10a3fda.chunk.css.map",
+    "static/js/2.6ae16e8f.chunk.js.LICENSE": "/Barber-react/static/js/2.6ae16e8f.chunk.js.LICENSE",
+    "static/media/Home.css": "/Barber-react/static/media/new.812d5d4b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3e97b96.js",
+    "static/js/2.6ae16e8f.chunk.js",
+    "static/css/main.a10a3fda.chunk.css",
+    "static/js/main.081551a0.chunk.js"
+  ]
+}

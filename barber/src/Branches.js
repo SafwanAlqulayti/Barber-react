@@ -8,15 +8,21 @@ class Branches extends Component {
    
   render () {
     const style = {
-      width: '200px',
-      height: '200px' 
+      width: '500px',
+      height: '300px' 
        
     }
+   
     return (
    
-      <div class="services1" id="Branches" >
-      
-   
+      <div className="bg-light page-section">
+      <div id="test" >
+         <h1 >Tahlih Branch</h1>
+         <h3>Working Hours</h3>
+         <span>Mon-Fri    8-12am     4-8pm</span>
+         </div>
+   <div class="services1" id="Branches" >
+ 
  <div class="services-left">
    <ul>
      <li> 
@@ -83,22 +89,22 @@ class Branches extends Component {
 
  <div className="services-right">
 
- {/* <Map google={this.props.google} zoom={14}   
+ <Map google={this.props.google} zoom={14}   
        style={style}
       initialCenter={{
         lat: 7.854885,
         lng: -88.081807
       }}>
-{/*  
+ 
  <Marker onClick={this.onMarkerClick}
          name={'Current location'} style={style} />
 
  <InfoWindow onClose={this.onInfoWindowClose} style={style}>
  
- </InfoWindow> */} */}
-{/* </Map> */}
+ </InfoWindow>
+</Map>
  </div>
- 
+ </div>
  
   
  

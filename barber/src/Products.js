@@ -163,7 +163,7 @@ class Products extends Component {
             <h3 className="section-subheading text-muted">All avilable products.</h3>
           </div>
         </div>
-        <div className="row" id="products1">
+        <div className="row container" >
             {this.state.arr.map((item)=>(
  <ProductInfo name={item.name} img={item.img} price={item.price}
  description={item.description}

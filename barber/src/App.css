@@ -4,9 +4,18 @@
 .ProductInfo{
    
     
-    background-color: #fed136;
-    display: flex;
-    flex-direction: row;
+     display: flex;
+ flex-wrap: wrap;
+}
+
+#Product12{
+  width: 300px;
+  height: 500px;
+  border:1px; border-style:solid ; border-color:#FFf000;padding:10px ;
+}
+#Product12 > img {
+  width: 290px !important;
+  height: 228px !important;
 }
 
 #map1{

@@ -3,6 +3,7 @@ import Services from './Services'
 import './Home.css'
 import Proceess from './Process';
 import About from './About';
+import HeairCut from './HeairCut';
 
 
 class Home extends Component {
@@ -28,6 +29,11 @@ class Home extends Component {
           <Services/>
           <Proceess/>
           <About/>
+          {this.props.cut.map((c)=>(
+            <HeairCut  name={c.title} price={c.price} des={c.description} ></HeairCut>
+
+          )) }
+          
           
           </div>
           

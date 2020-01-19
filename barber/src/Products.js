@@ -85,55 +85,74 @@
 
 // export default Products;
 
-
 import React, {Component} from 'react';
 import axios from 'axios' ;
+import ProductInfo from './ProductInfo'
 class Products extends Component {
+    constructor(){
+        super()
+        this.state ={
+            arr: [],
+            img: "",
+            name: "" ,
+            description:"" ,
+            price: 0 
+
+        }
+    }
 
     componentDidMount(){
         
         
         
-        for(var i =1 ; i<10 ; i++){
+        
 
          
-        axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/products/${i}`)
+        axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/products.json`)
             .then(data =>{
-                console.log(data)
-             var div =  document.createElement("Div")
-             var photo =  document.createElement("img")
-             var name = document.createElement("p")
-             var price = document.createElement("p")
-             var des = document.createElement("p")
-             
-             photo.setAttribute("src", data.data.data.img)
+            //     console.log(data)
+            //  var div =  document.createElement("Div")
+            //  var photo =  document.createElement("img")
+            //  var name = document.createElement("p")
+            //  var price = document.createElement("p")
+            //  var des = document.createElement("p")
+            console.log("Ssssss")
+            console.log(data.data)
+            this.setState({
+                 arr:  data.data
+            })
+             //  this.setState({
+            //      img: data.data.data.img ,
+            //      name: data.data.data.name ,
+            //      description: data.data.data.description ,
+            //      price: data.data.data.price
+            //  })
+        //      photo.setAttribute("width", "290px");
+        //      photo.setAttribute("height", "228");
+        //      photo.classList.add("img-fluid");
+        //      div.setAttribute("width", "500px");
+        //      div.setAttribute("height", "500px");
+        //      div.setAttribute("style","border:1px; border-style:solid; border-color:#FFf000;padding:10px")
+        //      name.innerHTML = data.data.data.name
+        //      price.innerHTML =data.data.data.price
+        //     des.innerHTML = data.data.data.description
+        //      div.classList.add("col-md-4");
             
-             photo.setAttribute("width", "290px");
-             photo.setAttribute("height", "228");
-             photo.classList.add("img-fluid");
-             div.setAttribute("width", "500px");
-             div.setAttribute("height", "500px");
-             div.setAttribute("style","border:1px; border-style:solid; border-color:#FFf000;padding:10px")
-             name.innerHTML = data.data.data.name
-             price.innerHTML =data.data.data.price
-            des.innerHTML = data.data.data.description
-             div.classList.add("col-md-4");
-            
              
-             div.appendChild(photo)
-             div.appendChild(name)
-             div.appendChild(des)
-             div.appendChild(price)
+        //      div.appendChild(photo)
+        //      div.appendChild(name)
+        //      div.appendChild(des)
+        //      div.appendChild(price)
 
-         var s = document.getElementById("products1")
-        s.appendChild(div)
-                    console.log(data)
-        }) }}
+        //  var s = document.getElementById("products1")
+        // s.appendChild(div)
+        //             console.log(data)
+        }) }
     
 
 
     render(){
-        return(
+         return(
             <div >
                 
                 <section className="bg-light page-section" id="portfolio">
@@ -145,7 +164,16 @@ class Products extends Component {
           </div>
         </div>
         <div className="row" id="products1">
-           
+            {this.state.arr.map((item)=>(
+ <ProductInfo name={item.name} img={item.img} price={item.price}
+ description={item.description}
+ ></ProductInfo>
+
+            ))}
+        {/* <ProductInfo name={this.state.name} img={this.state.img} price={this.state.price}
+        description={this.state.description}
+        ></ProductInfo> */}
+
         
     
         </div>

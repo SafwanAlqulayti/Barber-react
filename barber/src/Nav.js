@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 import Products from './Products';
 import Home from './Home';
+import db from './Db';
+import Branches from './Branches';
+
+import Reservision from './Reservision';
+ import Appointment from './Appointment';
+import AddProduct from './Addproduct';
 import {
   BrowserRouter as Router,
   Route,
@@ -9,42 +15,45 @@ import {
 
 class Nav extends Component {
   render () {
+    var prePath = "";
     return (
  
       <Router>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+         <nav>
+     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">
-        <a className="navbar-brand js-scroll-trigger" href="#page-top">Barbar Shops</a>
+        <a className="navbar-brand js-scroll-trigger" href="#page-top">Barber</a>
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i className="fas fa-bars"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav text-uppercase ml-auto">
-          <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#home">Home</a>
+            <li className="nav-item"  >
+              <a className="nav-link js-scroll-trigger"  href="/"><Link className="nav-link" to={prePath + "/Appointment"}> Appointment</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Branches"}> Branches</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#products">Products</a>
-            </li>
-        
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#branch">Branch</a>
-            </li>
-            {/* <li className="nav-item">
-              <a className="nav-link js-scroll-trigger"  ><Link to="/"> Home</Link></a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Reservision"}> Reservision</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger"> <Link to="/products">products</Link> </a>
-            </li> */}
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/"}> Home</Link></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/products"}>products</Link> </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
+     </nav>
+     <Route exact path="/"  ><Home cut={db}></Home></Route>
+      <Route  path="/products" component={Products} />  
+      <Route  path="/Branches" component={Branches} />
+     <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
+     <Route path="/Appointment" component={Appointment} ></Route>
     </Router>
    
     )}}

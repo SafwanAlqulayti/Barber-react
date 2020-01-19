@@ -36,8 +36,9 @@ class Appointment extends Component {
      
     render() {
         return (
-            <div>
-<h1>Appointment</h1>
+          <div className="container bg-light page-section">
+        
+<h1> All Appointment</h1>
 <div id="app1"></div>
                 
             </div>

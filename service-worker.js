@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Barber-react/precache-manifest.d4f3bb41760cc5985bb4c1a27fd94d39.js"
+  "/Barber-react/precache-manifest.5836140d5cc0a082aba23dc2761fb11e.js"
 );
 
 self.addEventListener('message', (event) => {

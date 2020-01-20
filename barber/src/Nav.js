@@ -15,7 +15,8 @@ import {
 
 class Nav extends Component {
   render () {
-    var prePath = "";
+    
+    var prePath = "Barber-react";
     return (
  
       <Router>

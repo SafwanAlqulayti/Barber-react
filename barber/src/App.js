@@ -1,19 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import React ,{Component} from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'; 
+import './custom.css';
 import './App.css';
-import Products from './Products';
-import Services from './Services'
 
-function App() {
+
+import Nav from './Nav'
+import Home from './Home';
+ 
+
+
+  class App extends Component {
+
+   render(){
+ 
+    // var prePath = "/Barber-react";
+      
+
   return (
-    <div className="App">
-<<<<<<< HEAD
-  
-=======
-      <Services></Services>
->>>>>>> f1bc1ee2b6b317dc71d307304c236d03bb7326c4
-    </div>
-  );
-}
+    <Router>
+     
+    <div className="App" id="nav1">
 
-export default App;
+ 
+  <Nav></Nav> 
+ 
+      <div>
+    
+     {/* <Route path="/Addproduct" component={Addproduct} > <Addproduct  ></Addproduct> </Route> */}
+
+      </div>
+      
+      
+    
+            </div>
+            </Router>
+  )}
+        }  
+        
+   export default App ;
